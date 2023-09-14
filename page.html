@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        padding:0px;
+        margin:0px;
+        box-sizing:border-box;
+        text-decoration:none;
+        list-style:none;
+        font-family: 'Inter', sans-serif;
+    }
+
+    :root{
+       --text-color:#ffffff;
+       --main-color:#13bbff;
+       --bg-color:#1b1f24;
+       
+       --big-font:4.5rem;
+       --h4-font:1.6rem;
+       --p-font:1.1rem;
+
+    }
+
+    body{
+        color: var(--text-color);
+        background: var(--bg-color);
+    }
+
+    header{
+        position:fixed;
+        width:100%;
+        top:0;
+        right:0;
+        z-index:1000;
+        display:flex;
+        align-items: center;
+        justify-content:space-between;
+        padding: 40px 16%;
+        background:transparent;
+        transition: all .55 ease ;
+    }
+
+    .logo{
+        font-size:36px;
+        color:var(--text-color);
+        font-weight: 600;
+    }
+
+    span{
+        color: var(--main-color);
+    }
+
+    .navlist{
+        display: flex;
+        
+    }
+
+    .navlist a{
+        margin-left:40px;
+        color: var(--text-color);
+        font-size: var(--p-font);
+        font-weight:600;
+        transition: all .55 ease;
+
+    }
+
+    .navlist a:hover{
+        color: var(--main-color);
+        text-shadow: 3px 3px 20px var(--main-color), -2px 1px 30px var(--text-color);
+    }
+
+    .navlist a.active{
+        color:var(--main-color);    
+    }
+
+    .h-btn{
+        display:inline-block;
+        padding:11px 26px;
+        background:transparent;
+        color:var(--main-color);
+        border: 2px solid var(--main-color);
+        border-radius: 8px;
+        font-size:15px;
+        font-weight: 600;
+        transition: all .55 ease;
+    }
+
+    .h-btn:hover{
+        background: var(--main-color);
+        color: var(--bg-color);
+        box-shadow: 0 0 20px var(--main-color);
+        transition: all .55s ease;
+    }
+    
+   
+   .hero{
+    padding:0 16%;
+    height:100vh;
+    width:100%;
+   }
+
+   .main-content{
+    padding-top:300px;
+   }
+
+   .main-content h4{
+    font-size: var(--h4-font);
+   }
+
+   .main-content h1{
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin:20px 0px 20px;
+    line-height: 1.2;
+   }
+
+   .main-content p{
+    font-size:16px;
+    font-weight: 400;
+    width:620px;
+    max-width: 100%;
+    color:#eee;
+    line-height: 30px;
+    margin-bottom: 15px;
+   }
+
+   .social{
+    margin-bottom: 40px;
+   }
+
+   .social a{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:40px;
+    height:40px;
+    color: var(--main-color);
+    border-radius:50%;
+    backdrop-filter: brightness(88);
+    font-size:20px;
+    margin-right:17px;
+    box-shadow: 0 0 20px transparent;
+    cursor:pointer;
+    transition: all .55s ease;
+    background-color: var(--bg-color);
+   
+   }
+
+   .social a:hover{
+    transform: scale (1.1);
+    box-shadow:0 0 20px var(--main-color);
+   }
+
+    .btn{
+        display: inline-block;
+        padding:11px 26px;
+        background:var(--main-color);
+        color:var(--bg-color);
+        border:2px solid var(--main-color);
+        border-radius: 8px;
+        font-size:15px;
+        font-weight: 600;
+        transition:all .50 ease;
+    }
+
+    .btn:hover{
+        background:transparent;
+        color:var(--main-color);
+        box-shadow: 0 0 20px var(--main-color);
+        transition:all .55s ease;
+    }
+
+    .btn2{
+        background:transparent;
+        color:var(--main-color);
+        border:2px solid var(--main-color);
+        margin-left:15px;
+        transition: all .55 ease;
+
+    }
+
+    .btn2:hover{
+        background-color:var(--main-color);
+        color:var(--bg-color);
+    }
+
+    .bottom{
+        margin-top: 85px;
+    }
+
+    .bottom p{
+        font-size: 15px;
+        font-weight:400;
+        color:#eee;
+        letter-spacing: 1px;
+    }
+
+    
+
+    </style>
+
+
+    <!---remixicons link-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!---Google fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!---header-->
+    <header>
+        <a href = "#" class = "logo">Developer <span>X.</span></a>
+
+        <ul class = "navlist">
+            <li><a href = "#" class = "active">Home</a></li>
+            <li><a href = "#">Hakkımda</a></li>
+            <li><a href = "#">Servisler</a></li>
+            <li><a href = "#">Portfolyom</a></li>
+            <li><a href = "#">Bağlantı</a></li>
+        </ul>
+
+        <div class = "top-btnn">
+            <a href = "#" class = "h-btn">İrtibat için</a>
+        </div>
+
+    </header>
+
+    <!--hero-->
+    <section class = "hero">
+        <div class = "main-content">
+            <h4>Hey, selam!</h4>
+            <h1>Ben <span class = "input"></span></h1>
+            <p>Bu benim projelerimin, bilgilerimin vs.. bulunduğu bir web site. Web siteme hoşgeldin!</p>
+            <div class = "social">
+                <a href = "#"><i class="ri-github-line"></i></a>
+                <a href = "#"><i class="ri-instagram-line"></i></a>
+                <a href = "#"><i class="ri-twitter-line"></i></a>
+                <a href = "#"><i class="ri-youtube-line"></i></a>
+
+            </div>
+
+            <div class = "main-btnn">
+                <a href = "#" class ="btn">İşe al</a>
+                <a href = "#" class ="btn btn2">CV İndir</a>
+            </div>
+        </div>
+
+        <div class = "bottom">
+            <p>Copyright © 2023 - Made by Ahmet Avcı</p>
+        </div>
+
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+
+    <!--js link-->
+    <script src ="js/script.js"></script>
+
+    <script>
+        var typed = new Typed(".input",{
+            strings:["Ahmet Avcı", "Web Geliştiricisi", "UI UX Tasarımcısı"],
+            typeSpeed: 70,
+            backSpeed:65,
+            loop:true
+        })
+    </script>
+    
+</body>
+</html>
