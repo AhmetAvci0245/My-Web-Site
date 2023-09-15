@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        padding:0px;
+        margin:0px;
+        box-sizing:border-box;
+        text-decoration:none;
+        list-style:none;
+        font-family: 'Inter', sans-serif;
+    }
+
+    :root{
+       --text-color:#ffffff;
+       --main-color:#13bbff;
+       --bg-color:#1b1f24;
+       
+       --big-font:4.5rem;
+       --h4-font:1.6rem;
+       --p-font:1.1rem;
+
+    }
+
+    body{
+        color: var(--text-color);
+        background: var(--bg-color);
+    }
+
+    header{
+        position:fixed;
+        width:100%;
+        top:0;
+        right:0;
+        z-index:1000;
+        display:flex;
+        align-items: center;
+        justify-content:space-between;
+        padding: 40px 16%;
+        background:transparent;
+        transition: all .55 ease ;
+    }
+
+    .logo{
+        font-size:36px;
+        color:var(--text-color);
+        font-weight: 600;
+    }
+
+    span{
+        color: var(--main-color);
+        font-weight:700;
+    }
+
+    .navlist{
+        display: flex;
+        
+    }
+
+    .navlist a{
+        margin-left:40px;
+        color: var(--text-color);
+        font-size: var(--p-font);
+        font-weight:600;
+        transition: all .55 ease;
+
+    }
+
+    .navlist a:hover{
+        color: var(--main-color);
+        text-shadow: 3px 3px 20px var(--main-color), -2px 1px 30px var(--text-color);
+    }
+
+    .navlist a.active{
+        color:var(--main-color);    
+    }
+
+    .h-btn{
+        display:inline-block;
+        padding:11px 26px;
+        background:transparent;
+        color:var(--main-color);
+        border: 2px solid var(--main-color);
+        border-radius: 8px;
+        font-size:15px;
+        font-weight: 600;
+        transition: all .55 ease;
+    }
+
+    .h-btn:hover{
+        background: var(--main-color);
+        color: var(--bg-color);
+        box-shadow: 0 0 20px var(--main-color);
+        transition: all .55s ease;
+    }
+
+    .bas{
+        position:fixed;
+        width:100%;
+        top:120px;
+        right: -30px;
+      
+      
+        align-items: center;
+        justify-content:space-between;
+        padding: 40px 16%;
+        background:transparent;
+        transition: all .55 ease ;
+        color:#13bbff;
+    }
+
+    .ben{
+        position:fixed;
+        width:100%;
+        top:300px;
+        left:350px;
+        font-size: 19px;
+        align-items:center;
+        justify-content: space-between;
+    }
+</style>
+
+    <!---remixicons link-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!---Google fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!---header-->
+    <header>
+        <a href = "#" class = "logo">Developer <span>X.</span></a>
+
+        <ul class = "navlist">
+            <li><a href = "file:///C:/Users/Misafir/Desktop/Page2/page.html">Home</a></li>
+            <li><a href = "file:///C:/Users/Misafir/Desktop/Page2/hakkimda.html" class = "active">Hakkımda</a></li>
+            <li><a href = "#">Servisler</a></li>
+            <li><a href = "#">Portfolyom</a></li>
+            <li><a href = "#">Bağlantı</a></li>
+        </ul>
+
+        <div class = "top-btnn">
+            <a href = "#" class = "h-btn">İrtibat için</a>
+        </div>
+
+    </header>
+
+    <div class = "bas">
+        <h1 class = "hakkim">Hakkımda</h1>
+
+    </div>
+
+
+    <div class = "ben">
+        <p>Benim adım <span>Ahmet</span>, 15 Eylül 2006 İstanbul doğumluyum. Küçüklükten beri teknolojik <br>
+         aletler ile haşırneşirim, ilk bilgisayarım 5 yaşımdayken alınmıştı. Yazılımcı olma serüvenim <br>
+         Annem sayesinde başladı ve hala daha ilerliyor..
+        </p>
+    </div>
+
+
+</body>
+</html>
